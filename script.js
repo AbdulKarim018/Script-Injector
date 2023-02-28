@@ -1,5 +1,5 @@
 let scriptInjected;
-const src = prompt(`Enter the source for your script. Write "default.js" to use default script.`)//"\default.js"
+const src = "\scriptToInject.js"
 const scriptLoader = () => {
     let script = document.createElement("script")
     script.src = src
@@ -19,6 +19,5 @@ btn.onclick = scriptStatus_show = () => {
         scriptInjected = true
     } else if (scriptInjected == true) {
         document.getElementById("scriptStatus").innerHTML = "Script is already Injected.<br>If the script doesnot work try reloading the page or provide a valid source."
-
     }
 }
