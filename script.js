@@ -3,6 +3,7 @@ const src = "\scriptToInject.js"
 const scriptLoader = () => {
     let script = document.createElement("script")
     script.src = src
+    script.onerror = document.getElementById("scriptStatus").innerHTML = `Error fetching script from the SOURCE: "${src}"`
     document.body.appendChild(script)
 }
 
@@ -17,6 +18,6 @@ btn.onclick = scriptStatus_show = () => {
         setTimeout(scriptLoader, 7000)
         scriptInjected = true
     } else if (scriptInjected == true) {
-        document.getElementById("scriptStatus").innerHTML = "Script is already Injected."
+        document.getElementById("scriptStatus").innerHTML = "Script is already Injected.<br>If the script doesnot work try reloading the page or provide a valid source."
     }
 }
