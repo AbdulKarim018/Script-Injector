@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -34,12 +35,12 @@ body {
     color: rgb(42, 255, 42);
 }
 
-#console-container{
+#console-container {
     padding-top: 80px;
     font-size: x-large;
 }
 
-#console{
+#console {
     padding-top: 30px;
     font-size: medium;
 }
