@@ -1,0 +1,45 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#btn-container {
+    text-align: center;
+}
+
+#btn {
+    width: 500px;
+    height: 200px;
+    border-radius: 5vw;
+    font-size: xx-large;
+    cursor: pointer;
+    border-width: 25px;
+    border-color: red;
+    color: rgb(42, 255, 42);
+    background-color: black;
+}
+
+#scriptStatusContainer {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 150px;
+}
+
+#scriptStatus {
+    color: rgb(42, 255, 42);
+}
+
+#console-container{
+    padding-top: 80px;
+    font-size: x-large;
+}
+
+#console{
+    padding-top: 30px;
+    font-size: medium;
+}
