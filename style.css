@@ -15,7 +15,7 @@ body {
 
 #btn-container {
     overflow: hidden;
-    width: auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -30,6 +30,11 @@ body {
     color: rgb(42, 255, 42);
     background-color: black;
     margin-left: auto;
+
+    animation: slideLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+
 }
 
 #scriptStatusContainer {
@@ -37,23 +42,35 @@ body {
     font-size: xx-large;
     padding-top: 150px;
     overflow: hidden;
-    width: auto;
+    width: 100%;
+    padding-bottom: 100px;
 }
 
 #scriptStatus {
     color: rgb(42, 255, 42);
+
+    animation: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
 }
 
 #console-container {
     padding-top: 80px;
     font-size: x-large;
-    width: auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 #console {
     padding-top: 30px;
     font-size: medium;
-    width: auto;
+    overflow: hidden;
+
+    animation: slideLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -74,15 +91,33 @@ body {
         font-size: xx-large;
         padding-top: 150px;
         overflow: hidden;
-        width: auto;
+        width: 100%;
     }
 
     #console-container {
         padding-top: 80px;
         font-size: x-large;
-        width: auto;
+        width: 100%;
+        position: relative;
 
     }
 
 
 }
+
+@keyframes slideLeft {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+
+
+/* *{
+    border-style: solid;
+    border-width: 1px;
+} */
